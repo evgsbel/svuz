@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Svcharter Узбекистан</title>
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!--STYLES END-->
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="row header__flex">
+            <a href="/" class="logo header__logo">
+                <img src="/img/logo.png" alt="Лого SV Charter">
+            </a>
+            <div class="header__contacts">
+                <a href="tel:+998990776655" class="header__phone">
+                    <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3396 0.411505C24.0829 0.205546 23.7734 0.0706655 23.4439 0.0211631C23.1144 -0.0283392 22.7773 0.00938143 22.4681 0.130326L1.13869 8.46542C0.794014 8.60252 0.500571 8.83787 0.297313 9.1402C0.0940557 9.44253 -0.00940297 9.79756 0.000671707 10.1581C0.0107464 10.5187 0.133878 10.8678 0.35372 11.1591C0.573563 11.4503 0.879718 11.67 1.23154 11.7889L5.83386 13.3353L8.32787 21.3166C8.33263 21.3328 8.34811 21.3431 8.35525 21.3581C8.38095 21.4218 8.41847 21.4804 8.46597 21.531C8.53813 21.609 8.63128 21.6661 8.73501 21.6958C8.74691 21.7004 8.75525 21.7108 8.76715 21.7131H8.77429L8.77787 21.7142C8.86996 21.7334 8.96567 21.7286 9.05524 21.7004C9.06477 21.6981 9.07429 21.6981 9.085 21.6946C9.17101 21.6654 9.24884 21.6173 9.31238 21.554C9.31952 21.546 9.33143 21.5448 9.33857 21.5379L12.9254 17.7051L18.1599 21.6289C18.4777 21.8698 18.8694 22 19.273 22C20.1468 22 20.9003 21.4077 21.0801 20.5814L24.9634 2.12277C25.0292 1.80941 25.006 1.48462 24.8961 1.18304C24.7863 0.881465 24.5939 0.614406 24.3396 0.410352V0.411505ZM9.62905 14.8507L8.78739 18.8114L7.03146 13.1901L15.7397 8.7996L9.79095 14.5591C9.70857 14.6388 9.65226 14.7402 9.62905 14.8507ZM19.9134 20.3498C19.8911 20.4543 19.8413 20.5515 19.769 20.632C19.6967 20.7125 19.6041 20.7737 19.5003 20.8096C19.3991 20.8473 19.2894 20.8589 19.1821 20.8431C19.0748 20.8274 18.9736 20.7848 18.8884 20.7197L13.2183 16.4686C13.0997 16.3801 12.9511 16.338 12.8019 16.3508C12.6528 16.3636 12.5141 16.4304 12.4135 16.5378L9.91714 19.2009L10.7576 15.2517L19.3158 6.96618C19.416 6.86885 19.477 6.74004 19.4878 6.603C19.4985 6.46597 19.4583 6.32973 19.3744 6.21887C19.2904 6.10802 19.1684 6.02985 19.0301 5.99847C18.8919 5.96709 18.7467 5.98456 18.6206 6.04774L6.28385 12.2682L1.62082 10.6987C1.49719 10.6592 1.38935 10.5833 1.31233 10.4817C1.2353 10.3801 1.19292 10.2578 1.19107 10.1317C1.18514 10.0046 1.22023 9.87883 1.29148 9.77186C1.36272 9.6649 1.4666 9.58205 1.58868 9.53482L22.9146 1.19973C23.0239 1.15478 23.1439 1.14024 23.2613 1.15775C23.3786 1.17526 23.4886 1.22412 23.5788 1.29883C23.6686 1.36911 23.7363 1.46215 23.7746 1.56756C23.8129 1.67297 23.8201 1.7866 23.7955 1.89576L19.9134 20.351V20.3498Z"
+                              fill="white"/>
+                    </svg>
+                    +998 99 077 66 55
+                </a>
+                <a href="#popup" data-fancybox class="btn-reset btn header__btn">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero">
+        <div class="container">
+            <div class="hero__form hero-form">
+                <div class="hero-form__heading">Забронировать самолет</div>
+                <form action="#" id="form">
+                    <div class="hero-form__body">
+                        <label for="hr-from" class="hero-form__label">
+                            <span>Откуда</span>
+                            <input name="from" id="hr-from" type="text" class="hero-form__input hero-form__input_where _req">
+                        </label>
+                        <label for="hr-to" class="hero-form__label">
+                            <span>Куда</span>
+                            <input name="to"  id="hr-to" type="text" class="hero-form__input hero-form__input_where _req">
+                        </label>
+                        <label for="hr-date" class="hero-form__label">
+                            <span>Дата вылета</span>
+                            <input name="date" id="hr-date" type="date" class="hero-form__input hero-form__input_date">
+                        </label>
+                        <label for="hr-phone" class="hero-form__label">
+                            <span>Телефон</span>
+                            <input name="phone" id="hr-phone" type="tel" class="hero-form__input _req _phone">
+                        </label>
+                        <button class="btn-reset hero-form__btn" type="submit">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="slogan">
+        <div class="container">
+            <p class="slogan__title">Забронируйте частный борт</p>
+            <p class="slogan__subtitle">Индивидуальные перелеты на частном самолете, соответствующие вашему вкусу и чувству прекрасного.</p>
+        </div>
+    </section>
+
+    <section class="description" style="background-image: url('../img/descr-bg.jpg');">
+        <div class="container">
+            <p class="description__title">SV Charter –</p>
+            <p class="description__content">эксперт бизнес-авиации с международным 27-летним опытом, специализирующийся на чартерных и корпоративных авиаперевозках. Безупречная репутация и тщательно выстроенные отношения с авиакомпаниями по всем миру позволяют решать самые сложные задачи в короткие сроки.</p>
+        </div>
+    </section>
+
+    <section class='rd-utp'>
+        <div class="container">
+
+                <p class="rd-utp__title">
+                    ДОВЕРЬТЕ ВАШ ПЕРЕЛЕТ SV CHARTER
+                </p>
+                <ul class="rd-utp__list">
+                    <li class="rd-utp__item rd-utp__item_with-bdr rd-utp__item_with-bdb">
+                        <img src="/img/01.svg" alt="" class="rd-utp__icon">
+                        <p class="rd-utp__caption">Богатый опыт</p>
+                        <p class="rd-utp__description">27 лет безукоризненной работы в сфере бизнес-авиации</p>
+                    </li>
+                    <li class="rd-utp__item rd-utp__item_with-bdr rd-utp__item_with-bdb">
+                        <img src="/img/02.svg" alt="" class="rd-utp__icon">
+                        <p class="rd-utp__caption">Команда профессионалов</p>
+                        <p class="rd-utp__description">ваши задачи решают лучшие брокеры с опытом работы от 10 лет и больше</p>
+                    </li>
+                    <li class="rd-utp__item rd-utp__item_with-bdr rd-utp__item_with-bdb">
+                        <img src="/img/03.svg" alt="" class="rd-utp__icon">
+                        <p class="rd-utp__caption">Международные стандарты</p>
+                        <p class="rd-utp__description">соблюдаем золотые лекала индустрии по работе с клиентами</p>
+                    </li>
+                    <li class="rd-utp__item rd-utp__item_with-bdb">
+                        <img src="/img/04.svg" alt="" class="rd-utp__icon">
+                        <p class="rd-utp__caption">Индивидуальный подход</p>
+                        <p class="rd-utp__description">каждая заявка находится под контролем вашего личного брокера 24/7</p>
+                    </li>
+                    <li class="rd-utp__item rd-utp__item_with-bdr">
+                        <img src="/img/05.svg" alt="" class="rd-utp__icon">
+                        <p class="rd-utp__caption">Безупречная репутация</p>
+                        <p class="rd-utp__description">надёжные выстроенные отношения с партнерами и операторами по всему миру</p>
+                    </li>
+                    <li class="rd-utp__item rd-utp__item_with-bdr">
+                        <img src="/img/06.svg" alt="" class="rd-utp__icon">
+                        <p class="rd-utp__caption">Выгодные условия</p>
+                        <p class="rd-utp__description">предлагаем лучшее соотношение цена-качество</p>
+                    </li>
+                    <li class="rd-utp__item rd-utp__item_with-bdr">
+                        <img src="/img/07.svg" alt="" class="rd-utp__icon">
+                        <p class="rd-utp__caption">Customer service</p>
+                        <p class="rd-utp__description">собственный отдел контроля качества клиентского обслуживания</p>
+                    </li>
+                    <li class="rd-utp__item">
+                        <img src="/img/08.svg" alt="" class="rd-utp__icon">
+                        <p class="rd-utp__caption">Платите, как удобно</p>
+                        <p class="rd-utp__description">возможность оплаты услуг в любой валюте</p>
+                    </li>
+                </ul>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <p class="feedback__title">Необходимо организовать корпоративный перелёт?</p>
+            <p class="feedback__subtitle">У нас вы можете воспользоваться услугами корпоративного сервиса
+                заказа самолетадля полётов сотрудников и топ-менеджеров.</p>
+            <a href="#feed"  class="btn-reset btn feedback__btn anchor">Арендовать самолёт для компании</a>
+        </div>
+    </section>
+
+    <section class="description description_second" style="background-image: url('../img/descr-bg-2.jpg');">
+        <div class="container">
+            <p class="description__content">Организуем частные перелеты из Ташкента в самые востребованные мировые столицы: доставим вас в Лондон, Дубай, Мюнхен, Милан, Париж, Мадрид и другие великолепные города.</p>
+            <p class="description__content">Благодаря двадцатисемилетнему опыту и глубоким знаниям рынка подобрать идеальный самолет для нас не составит труда. Профильные консультанты SV Charter внимательно учтут все ваши персональные требования и определят, что важно именно вам, а затем подберут оптимальное решение — идеальное как по цене, так и по другим параметрам.</p>
+        </div>
+    </section>
+
+    <section class="perfect">
+        <div class="container">
+            <img src="/img/avatar.png"  class="perfect__avatar" alt="SV Charter manager">
+            <p class="feedback__title">Какой самолет идеально подойдет для вашего перелета?</p>
+            <p class="feedback__subtitle">Оставьте заявку, чтобы ваш персональный менеджер подобрал
+                лучший самолет и сделал поездку незабываемой.</p>
+            <a href="#feed" class="btn-reset btn feedback__btn anchor">Подобрать самолет</a>
+        </div>
+    </section>
+
+    <section class="request" id="feed">
+        <div class="container">
+            <p class="feedback__title">Оставить заявку на перелет</p>
+            <p class="feedback__subtitle">Персональный менеджер свяжется с вами по телефону или через мессенджер.</p>
+            <div class="row request__flex">
+                <form action="" class="request__form">
+                    <label for="rq-from" class="request__label">
+                        <input name="from" id="rq-from" type="text" class="request__input request__input_where" placeholder="Откуда">
+                    </label>
+                    <label for="rq-to" class="request__label">
+                        <input name="to" id="rq-to" type="text" class="request__input request__input_where" placeholder="Куда">
+                    </label>
+                    <label for="rq-date" class="request__label">
+                        <input onfocus="(this.type='date')" name="date" id="rq-date" type="text" class="request__input request__input_date" placeholder="Дата вылета, если известна">
+                    </label>
+                    <label for="rq-phone" class="request__label">
+<!--                        <span>Номер телефона</span>-->
+                        <input name="phone" id="rq-phone" type="tel" class="request__input" placeholder="Номер телефона">
+                    </label>
+                    <button class="btn-reset request__btn">Отправить</button>
+                    <p class="request__conf">Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="/">политикой обработки персональных данных></a></p>
+                </form>
+                <img src="/img/request.jpg" alt="SV Charter Оставить заявку" class="request__img">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p class="footer__title">Контакты</p>
+        <address class="footer__address">
+            2, Islam Karimov Avenue, Block 5 <br>
+            Tashkent, 100027, Uzbekistan
+        </address>
+        <p class="footer__time">с 9:30 до 18:30</p>
+        <div class="footer__links">
+            <a href="/">Конфиденциальность</a>
+            <a href="/">Политика в отношении файлов куки</a>
+        </div>
+    </div>
+</footer>
+
+<!--POPUP -->
+<div class="popup" id="popup">
+    <p class="popup__title">Закзать звонок</p>
+    <form action="" class="popup__form">
+        <label for="name" class="popup__label">
+            <input id="name" type="text" class="popup__input" placeholder="Имя">
+        </label>
+        <label for="phone"  class="popup__label">
+            <input id="phone" type="tel" class="popup__input" placeholder="Телефон">
+        </label>
+        <label for="email"  class="popup__label">
+            <input id="email" type="email" class="popup__input" placeholder="Email">
+        </label>
+        <button type="submit" class="btn-reset btn popup__btn request__btn">Отправить</button>
+        <p class="request__conf">Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="/">политикой обработки персональных данных></a></p>
+    </form>
+</div>
+<!--POPUP END-->
+
+<!--SCRIPTS-->
+<script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script src="/js/main.js"></script>
+<!--SCRIPTS END-->
+</body>
+</html>
